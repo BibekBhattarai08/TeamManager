@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class player {
+    public int id;
     public String name;
     public String position;
     public int age;

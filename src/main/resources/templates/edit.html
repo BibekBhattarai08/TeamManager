@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Player Registration</title>
+    <title>Edit Player</title>
     <style>
         * {
             margin: 0;
@@ -62,7 +62,7 @@
         }
 
         input[type="submit"] {
-            background-color: #28a745;
+            background-color: #007bff;
             color: white;
             padding: 10px 20px;
             border: none;
@@ -70,11 +70,12 @@
             font-size: 14px;
             cursor: pointer;
             width: 100%;
+            margin-bottom: 10px;
             margin-top: 10px;
         }
 
         input[type="submit"]:hover {
-            background-color: #218838;
+            background-color: #0056b3;
         }
 
         .back-link {
@@ -96,8 +97,10 @@
 
 <body>
     <div class="container">
-        <h2>🏈 Player Registration</h2>
-        <form th:action="@{/player}" th:object="${player}" method="post">
+        <h2>✏️ Edit Player</h2>
+        <form th:action="@{/update}" th:object="${player}" method="post">
+            <input type="hidden" th:field="*{id}" />
+
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" th:field="*{name}" required>
@@ -133,11 +136,11 @@
                 <input type="text" id="phone" name="phone" th:field="*{phone}" required>
             </div>
 
-            <input type="submit" value="Register Player">
+            <input type="submit" value="Update Player">
         </form>
 
         <div class="back-link">
-            <a href="/">← Back to Home</a>
+            <a href="/register">← Back to Player List</a>
         </div>
     </div>
 </body>

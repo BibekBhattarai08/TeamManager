@@ -1,0 +1,18 @@
+2025-06-27 14:55:22.238362-04:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PLAYER" not found (this database is empty); SQL statement:
+SELECT * FROM player [42104-232]
+2025-06-27 14:55:23.601644-04:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PLAYER" not found (this database is empty); SQL statement:
+SELECT * FROM player [42104-232]
+2025-06-27 14:55:24.622127-04:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PLAYER" not found (this database is empty); SQL statement:
+SELECT * FROM player [42104-232]
+2025-06-27 14:57:41.185976-04:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PLAYER" not found (this database is empty); SQL statement:
+select * from player [42104-232]
+2025-06-27 14:58:08.874860-04:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PLAYER" not found (this database is empty); SQL statement:
+INSERT INTO player (name, position, age, team, country, email, phone)VALUES (?, ?, ?, ?, ?, ?, ?) [42104-232]
+2025-06-27 15:00:08.353279-04:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PLAYER" not found (this database is empty); SQL statement:
+SELECT * FROM player [42104-232]
